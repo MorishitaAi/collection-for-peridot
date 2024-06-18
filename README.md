@@ -43,3 +43,4 @@ Magisk Delta: [check here](https://github.com/HuskyDG/download/raw/main/magisk/2
 
 • Driver Xiaomi: [here](https://xiaomidriver.com/tag/xiaomi)
 
+• Platform tool: [here](https://developer.android.com/tools/releases/platform-tools)
