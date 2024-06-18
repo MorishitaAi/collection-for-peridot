@@ -1,0 +1,59 @@
+All require unlocking the bootloader, because it interferes with device
+
+• Magisk
+
+Root Without TWRP
+
+1. Locate the init_boot.img file from your current ROM and save it on your phone. (check stock tgz rom)
+2. Download and install the latest Magisk APK on your phone. (See instructions for flashing TWRP, they are similar)
+3. Use Magisk to patch the init_boot.img file.
+4. Transfer the patched init_boot.img file from your phone to your laptop or PC.
+5. Boot your phone into fastboot mode. This is typically done by holding the power button and volume down button simultaneously. 
+6. Open an ADB shell on your PC and run the following command to flash the patched init_boot.img
+
+fastboot flash init_boot_ab "PatchedInit_boot.img"
+
+7. Reboot your phone by running the following command:
+
+fastboot reboot
+
+(Apply similarly to flash method below)
+
+
+• Kernelsu
+
+1. Open and click on the box with a down arrow.
+2. After choose the init_boot.img that you recovered from your rom and finish the process
+3. Your patched init_boot.img will be in the download folder on your device
+4. Copy the patched init_boot.img to the computer
+5. Connect device in fastboot mode to pc
+6. Use command 
+
+fastboot flash init_boot_a "your_patched.img path" 
+fastboot flash init_boot_b "your_patched.img path"
+
+
+• Custom Recovery
+
+1. Keep the volume reduction with the power button to enter Fastboot mode
+2. Connect the device to the computer
+3. Inside (finally below there are files, not folders) platfrom tool (above you will see ">" and click it write CMD)
+4. (Equipment test) Enter fastboot devices (Test is connected or not, first installing the driver please do not use the default CMD on PC)
+5. Enter the command 
+fastboot flash recovery_ab + "Name of TWRP.IMG" or drag and drop the TWRP.IMG file (after the command is the downloaded file from a distance (every command requires a distance on the keyboard,other process executes SIMILARLY is no different from the commands with the word "Flash") Not a fixed "fastboot flash recovery_ab Twrp.img or Fastboot Flash Recovery_AB xyz.img"
+6. Keep the volume up button and hold the power button to enter recovery
+7. Go to Advanced, select Install recovery ramdisk. Recovery will ask when you manipulate, just drag the arrow icon below to confirm. When entering the Install recovery ramdisk, select the folder you contain Recovery (Recovery file including TWRP, Orangefox, ...)
+
+Trường hợp không nhận bộ nhớ
+
+1. File with strange letters, proceed to adb push in /data/ as below. Select data instead of sdcard will see the file.
+
+2. If you see 0MB in Wipe → Format Data → Yes
+
+[refer here](https://t.me/RedmiNote11_VN/599525)
+
+"For example: If I enter adb push file.img /sdcard/
+
+I will find the sdcard folder and find its file "
+
+Choose Reboot → System (Please do not choose if you do not have experience in slot a/b)
