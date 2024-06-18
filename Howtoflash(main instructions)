@@ -44,7 +44,8 @@ fastboot flash recovery_ab + "Name of TWRP.IMG" or drag and drop the TWRP.IMG fi
 6. Keep the volume up button and hold the power button to enter recovery
 7. Go to Advanced, select Install recovery ramdisk. Recovery will ask when you manipulate, just drag the arrow icon below to confirm. When entering the Install recovery ramdisk, select the folder you contain Recovery (Recovery file including TWRP, Orangefox, ...)
 
-Trường hợp không nhận bộ nhớ
+If internal storage is not accepted:
+
 
 1. File with strange letters, proceed to adb push in /data/ as below. Select data instead of sdcard will see the file.
 
