@@ -37,7 +37,7 @@ By: [suyuan87](https://github.com/suyuan87)
 • Magisk
 
 Original Magisk: [check here](https://github.com/topjohnwu/Magisk)
-Magisk Delta: [check here](https://github.com/HuskyDG/download/raw/main/magisk/26.4-kitsune.apk)
+Magisk Delta: [check here](https://github.com/HuskyDG/magisk-files/releases)
 
 • Bypass Unlock Bootloader: [You can use translation](https://www.youtube.com/watch?v=uG4KPHFzOIU)
 
