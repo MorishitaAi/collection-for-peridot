@@ -1,5 +1,5 @@
 # collection-for-peridot
-First, below I will share a concept related to AOSP ROM (MIUI Mod), Recovery and Flash Instructions
+First, below I will share a concept related to AOSP ROM (MIUI Mod), Recovery and some other notes
 
 ## What is custom recovery?
 
